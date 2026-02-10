@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Free Arcade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .game-card:hover { transform: scale(1.05); transition: 0.3s; }
+    </style>
+</head>
+<body class="p-8">
+    <header class="text-center mb-12">
+        <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+            THE FREE ARCADE
+        </h1>
+        <p class="mt-4 text-slate-400 italic">"Verified Secure. Always Free. No $5 Keys Required."</p>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="game-card bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-xl">
+            <h2 class="text-xl font-bold mb-2 text-cyan-400">Age of War</h2>
+            <p class="text-sm text-slate-400 mb-4">The classic strategy game. Conquer through the ages.</p>
+            <a href="games/age-of-war/index.html" class="block text-center bg-cyan-600 hover:bg-cyan-500 py-2 rounded font-bold">PLAY NOW</a>
+        </div>
+
+        <div class="game-card bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-xl">
+            <h2 class="text-xl font-bold mb-2 text-cyan-400">Stickman Warrior</h2>
+            <p class="text-sm text-slate-400 mb-4">Fast-paced stickman combat. No lag, no paywalls.</p>
+            <a href="games/stickman/index.html" class="block text-center bg-cyan-600 hover:bg-cyan-500 py-2 rounded font-bold">PLAY NOW</a>
+        </div>
+
+        <div class="game-card bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-xl opacity-50">
+            <h2 class="text-xl font-bold mb-2 text-slate-500">More Coming Soon...</h2>
+            <p class="text-sm text-slate-500 mb-4">Adding 20+ more games this week.</p>
+            <span class="block text-center bg-slate-700 py-2 rounded font-bold cursor-not-allowed">LOCKED</span>
+        </div>
+    </main>
+
+    <footer class="mt-20 text-center text-slate-500 text-xs border-t border-slate-800 pt-8">
+        <p>Security Audited by [Your Friend's Name] (Ranked #74 Nationally)</p>
+        <p class="mt-2">All games are Open Source and used under their respective licenses.</p>
+    </footer>
+</body>
+</html>
